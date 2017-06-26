@@ -1,0 +1,28 @@
+https://github.com/ProfessionalCSharp
+https://github.com/CNinnovation
+https://github.com/CNinnovation/ASPNETCoreJun2017
+
+cninnvasion.com
+docs.microsoft.com
+apisof.net
+
+## Infos_
+- dot.net <- f. div. Palttformen
+- net core 2.0 ab 08.2017
+- git <- public shares
+- Mads Kristensen <- v. Microsoft, Web-Dev-Team Plugins & Tools
+  - gulp
+
+## Interessante Themen:
+- Microsoft.Extensions.DependencyInjection
+  - Dependency Injection
+    - Container
+  - XML Transformation
+- Microsoft.Extensions.Logging
+  - ILogger
+    - Scope, Log, LogLevel
+  - ILoggerFactory
+    - provider, loggers
+- Microsoft.AspNetCore.StaticFiles
+  - app.UseStaticFiles();
+
