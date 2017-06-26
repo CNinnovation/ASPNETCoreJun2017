@@ -4,6 +4,7 @@ https://github.com/CNinnovation/ASPNETCoreJun2017
 
 cninnvasion.com
 docs.microsoft.com
+apisof.net
 
 ## Infos_
 - dot.net <- f. div. Palttformen
