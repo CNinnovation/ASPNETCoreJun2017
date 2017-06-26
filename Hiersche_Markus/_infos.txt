@@ -19,4 +19,6 @@ cninnvasion.com
     - Scope, Log, LogLevel
   - ILoggerFactory
     - provider, loggers
+- Microsoft.AspNetCore.StaticFiles
+  - app.UseStaticFiles();
 
