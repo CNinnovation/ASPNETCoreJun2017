@@ -5,12 +5,12 @@ https://github.com/CNinnovation/ASPNETCoreJun2017
 cninnvasion.com
 docs.microsoft.com
 apisof.net
+dot.net <- f. div. Palttformen
 
 ## Infos_
-- dot.net <- f. div. Palttformen
 - net core 2.0 ab 08.2017
 - git <- public shares
-- Mads Kristensen <- v. Microsoft, Web-Dev-Team Plugins & Tools
+- Mads Kristensen <- v. Microsoft, Web-Dev-Team: Plugins & Tools
   - gulp
 
 ## Interessante Themen:
