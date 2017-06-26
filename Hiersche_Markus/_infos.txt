@@ -1,0 +1,22 @@
+https://github.com/ProfessionalCSharp
+https://github.com/CNinnovation
+https://github.com/CNinnovation/ASPNETCoreJun2017
+
+cninnvasion.com
+
+## Infos_
+- dot.net <- f. div. Palttformen
+- net core 2.0 ab 08.2017
+- git <- public shares
+
+## Interessante Themen:
+- Microsoft.Extensions.DependencyInjection
+  - Dependency Injection
+    - Container
+  - XML Transformation
+- Microsoft.Extensions.Logging
+  - ILogger
+    - Scope, Log, LogLevel
+  - ILoggerFactory
+    - provider, loggers
+
