@@ -1,3 +1,21 @@
+# Preparations
+
+1. Create a GibHub account
+2. Developer Command prompt - get course files
+
+> git clone https://github.com/CNinnovation/ASPNETCoreJun2017
+
+4. Create a subdirectory in the course samples with your name (e.g. Christian)
+5. Create a new file in this subdirectory
+6. git add newfile.txt
+7. git commit -m "added newfile.txt"
+8. git pull
+9. git push
+
+10. get Professional C# samples
+
+> git clone https://github.com/ProfessionalCSharp/ProfessionalCSharp6
+
 # Lab 1 - Use the dotnet Tools
 
 1. Create a console application with *dotnet new*
