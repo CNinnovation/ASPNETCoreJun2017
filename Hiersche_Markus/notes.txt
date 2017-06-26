@@ -1,0 +1,14 @@
+https://github.com/ProfessionalCSharp
+https://github.com/CNinnovation
+                               /ASPNETCoreJun2017
+cninnvasion.com
+dot.net <- f. div. Palttformen
+.net core 2.0 ab 08.2017
+
+
+Interessante Themen:
+- Dependency Injection
+  - Microsoft.Extension.DependencyInjection <- Nuget-Paket
+  - Container
+- XML Transformation
+
