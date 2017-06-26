@@ -12,3 +12,5 @@ Interessante Themen:
   - Container
 - XML Transformation
 
+git
+- ignore files
