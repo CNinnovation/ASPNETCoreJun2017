@@ -6,13 +6,14 @@ namespace Lab02
     class Program
     {
 
+
         static void Main(string[] args)
         {
             var services = RegisterHelloServices();
-
+           
             HelloController c = services.GetService<HelloController>();
-
             Console.WriteLine(c.Greeting());
+
             Console.ReadKey();
         }
 
