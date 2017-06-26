@@ -25,4 +25,3 @@ apisof.net
     - provider, loggers
 - Microsoft.AspNetCore.StaticFiles
   - app.UseStaticFiles();
-
