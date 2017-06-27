@@ -23,8 +23,12 @@ namespace ConfigurationSample
             string defaultConnection = Configuration.GetConnectionString("DefaultConnection");
             Console.WriteLine(defaultConnection);
 
-            string secret = Configuration["secret1"];
-            Console.WriteLine($"this is a secret: {secret}");
+            MyTypedSetting setting = new MyTypedSetting();
+            Configuration.GetSection("MyTypedSetting").Bind(setting);
+            Console.WriteLine($"{setting.Title} {setting.TopLeft.X} {setting.TopLeft.Y}");
+
+            //string secret = Configuration["secret1"];
+            //Console.WriteLine($"this is a secret: {secret}");
         }
 
         static void SetupConfiguration(string[] args)
