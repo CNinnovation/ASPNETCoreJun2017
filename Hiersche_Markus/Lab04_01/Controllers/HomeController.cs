@@ -12,5 +12,11 @@ namespace Lab04_01.Controllers
         {
             return View();
         }
+
+        public IActionResult PassingData1()
+        {
+
+            return View();
+        }
     }
 }
