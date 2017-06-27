@@ -10,6 +10,7 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Net;
 using Lab03.Services;
+using Lab03.Middleware;
 
 namespace Lab03
 {
@@ -29,6 +30,8 @@ namespace Lab03
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseAbortAdminRequestsMiddleware();
 
             app.UseStaticFiles();
 

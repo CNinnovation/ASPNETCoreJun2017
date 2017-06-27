@@ -39,6 +39,9 @@
 Questions:
 
 1. What needs to be done to return static content like HTML, CSS, images...?
+UseStaticFiles()
 2. Which dependency injection framework is used with ASP.NET Core?
+Microsoft.Extensions.DependencyInjection, but anything can be used
 3. What are examples for pre-defined middleware?
+UseStaticFiles, Error/404 handling, MVC, ....
 
