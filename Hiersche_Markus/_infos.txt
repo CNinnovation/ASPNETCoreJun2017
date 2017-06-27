@@ -5,7 +5,7 @@ https://github.com/CNinnovation/ASPNETCoreJun2017
 cninnvasion.com
 docs.microsoft.com
 apisof.net
-dot.net <- f. div. Palttformen
+dot.net <- f. div. Plattformen
 
 ## Infos_
 - net core 2.0 ab 08.2017
