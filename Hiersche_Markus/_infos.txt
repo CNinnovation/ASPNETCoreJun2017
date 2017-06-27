@@ -18,6 +18,7 @@ dot.net <- f. div. Plattformen
   - Dependency Injection
     - Container
   - XML Transformation
+- Microsoft.Extensions.Configuration
 - Microsoft.Extensions.Logging
   - ILogger
     - Scope, Log, LogLevel
