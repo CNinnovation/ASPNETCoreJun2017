@@ -11,14 +11,23 @@ namespace Lab02
 
         ConfigSettings _settings;
 
-        public ConfigReaderController(IOptions<ConfigSettings> settings)
+        Caching _caching;
+
+        public ConfigReaderController() { }
+        public ConfigReaderController(IOptions<ConfigSettings> settings, IOptions<Caching> caching)
         {
             _settings = settings.Value;
+            _caching = caching.Value;
         }
 
         public string GetConnString()
         {
            return _settings.ConnectionString;
+        }
+
+        public void GetCachingInfos()
+        {
+            Console.WriteLine("Caching: " + _caching.Enabled + ", Duration: " + _caching.Duration);
         }
     }
 }

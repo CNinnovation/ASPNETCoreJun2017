@@ -20,6 +20,9 @@ namespace Lab02
 
             ConfigReaderController cr = services.GetService<ConfigReaderController>();
             Console.WriteLine("injected: " + cr.GetConnString());
+
+            cr.GetCachingInfos();
+
             Console.ReadKey();
         }
 
@@ -42,6 +45,7 @@ namespace Lab02
                .AddSingleton<ConfigReaderController>()
                .AddOptions()
                .Configure<ConfigSettings>(Configuration.GetSection("Settings"))
+               .Configure<Caching>(Configuration.GetSection("Caching"))
                .BuildServiceProvider();
         }
     }
