@@ -1,0 +1,26 @@
+﻿@using SimpleMVCApp.Models
+@model IEnumerable<Book>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@{ 
+    foreach (var book in Model)
+    {
+        <h2>@book.Title</h2>
+    }
+}
+
+<ul>
+    @foreach (Book b in Model)
+    {
+        <li>@b.Title</li>
+    }
+</ul>
+
+
+
+
