@@ -19,6 +19,8 @@ dot.net <- f. div. Plattformen
     - Container
   - XML Transformation
 - Microsoft.Extensions.Configuration
+- Microsoft.Extensions.Configuration.Binder
+  - Bsp.: MyTypeSetting direkt ansprechen
 - Microsoft.Extensions.Logging
   - ILogger
     - Scope, Log, LogLevel
