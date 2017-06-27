@@ -7,7 +7,7 @@ docs.microsoft.com
 apisof.net
 dot.net <- f. div. Plattformen
 
-## Infos_
+## Infos:
 - net core 2.0 ab 08.2017
 - git <- public shares
 - Mads Kristensen <- v. Microsoft, Web-Dev-Team: Plugins & Tools
