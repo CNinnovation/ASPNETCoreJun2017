@@ -1,9 +1,9 @@
 @echo off
-echo *** PULL: Professional CSharp 6 ***
-cd GitHub_Hiersche\ProfessionalCSharp6
-git pull
-cd ..
-cd ..
+::echo *** PULL: Professional CSharp 6 ***
+::cd GitHub_Hiersche\ProfessionalCSharp6
+::git pull
+::cd ..
+::cd ..
 
 echo *** PULL: ASP.Net Core 06 2017 ***
 cd GitHub_Hiersche\ASPNETCoreJun2017
