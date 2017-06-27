@@ -17,7 +17,7 @@ set minute=%TIME:~3,2%
 set jahr=%date:~-4%
 set monat=%date:~-10,2%
 set tag=%date:~-7,2%
-set datetime=%jahr%%monat%%tag%%stunde%%minute%
+set datetime=%jahr%.%monat%.%tag%_%stunde%:%minute%
 cd Hiersche_Markus
 git add .
 git commit -m "%datetime%"
