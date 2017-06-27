@@ -49,7 +49,7 @@ namespace Lab03
             });
         }
 
-        private static void HandleStaticRoute(IApplicationBuilder app)
+        private static void HandleStaticRoute(IApplicationBuilder app)          // /static
         {
             app.Run(async context =>
             {
@@ -57,7 +57,7 @@ namespace Lab03
             });
         }
 
-        private static void HandleParamsRoute(IApplicationBuilder app)
+        private static void HandleParamsRoute(IApplicationBuilder app)          // /showQuery
         {
             app.Run(async context =>
             {
@@ -79,7 +79,7 @@ namespace Lab03
             });
         }
 
-        private static void HandleXmlSitemap(IApplicationBuilder app)
+        private static void HandleXmlSitemap(IApplicationBuilder app)           // /sitemap.xml
         {
             app.Run(async context =>
             {
@@ -88,7 +88,7 @@ namespace Lab03
             });
         }
 
-        private static void HandleForm(IApplicationBuilder app)
+        private static void HandleForm(IApplicationBuilder app)                 // /form
         {
             app.Run(async context =>
             {
@@ -111,7 +111,7 @@ namespace Lab03
             });
         }
 
-        private static void HandleSample(IApplicationBuilder app)
+        private static void HandleSample(IApplicationBuilder app)               // /sample
         {
             app.Run(async context =>
             { 
