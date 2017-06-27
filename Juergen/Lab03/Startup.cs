@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Net;
+using Lab03.Services;
 
 namespace Lab03
 {
@@ -18,6 +19,7 @@ namespace Lab03
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<ISampleService, SampleService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,8 +38,7 @@ namespace Lab03
                 return context.Request.Path.Equals("/sitemap.xml");
             }, HandleXmlSitemap);
             app.Map("/form", HandleForm);
-
-
+            app.Map("/sample", HandleSample);
 
             app.Run(async (context) =>
             {
@@ -50,6 +51,16 @@ namespace Lab03
             app.Run(async context =>
             {
                 await context.Response.WriteAsync("static route");
+            });
+        }
+
+        private static void HandleSample(IApplicationBuilder app)
+        {
+            app.Run(async context =>
+            { 
+                var c = app.ApplicationServices.GetService<ISampleService>();
+
+                await context.Response.WriteAsync(c.DoSomething());
             });
         }
 
