@@ -38,7 +38,7 @@ namespace Lab03_01
 
             app.Run(async (context) =>
             {
-                HttpRequest request = context.Request;
+                //HttpRequest request = context.Request;
                 await context.Response.WriteAsync("Hy!");
             });
         }
