@@ -6,6 +6,7 @@ cninnvasion.com
 docs.microsoft.com
 apisof.net
 dot.net <- f. div. Plattformen
+caniuse.com <- welche js für welchen browser?
 
 ## Infos:
 - net core 2.0 ab 08.2017
@@ -19,6 +20,8 @@ dot.net <- f. div. Plattformen
     - Container
   - XML Transformation
 - Microsoft.Extensions.Configuration
+- Microsoft.Extensions.Configuration.Binder
+  - Bsp.: MyTypeSetting direkt ansprechen
 - Microsoft.Extensions.Logging
   - ILogger
     - Scope, Log, LogLevel

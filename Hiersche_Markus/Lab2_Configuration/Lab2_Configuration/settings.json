@@ -1,0 +1,11 @@
+{
+  "MyConfig": {
+    "a": 42
+  },
+  "MyTypedSetting": {
+    "Zahl": {
+      "b": 1989
+    },
+    "title": "GebJahr"
+  }
+}
