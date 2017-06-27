@@ -25,3 +25,4 @@ dot.net <- f. div. Palttformen
     - provider, loggers
 - Microsoft.AspNetCore.StaticFiles
   - app.UseStaticFiles();
+
