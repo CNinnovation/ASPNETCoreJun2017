@@ -16,14 +16,11 @@ namespace Lab03
 {
     public class Startup
     {
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<ISampleService, SampleService>();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
@@ -49,7 +46,7 @@ namespace Lab03
             });
         }
 
-        private static void HandleStaticRoute(IApplicationBuilder app)
+        private static void HandleStaticRoute(IApplicationBuilder app)          // /static
         {
             app.Run(async context =>
             {
@@ -57,7 +54,7 @@ namespace Lab03
             });
         }
 
-        private static void HandleParamsRoute(IApplicationBuilder app)
+        private static void HandleParamsRoute(IApplicationBuilder app)          // /showQuery
         {
             app.Run(async context =>
             {
@@ -79,7 +76,7 @@ namespace Lab03
             });
         }
 
-        private static void HandleXmlSitemap(IApplicationBuilder app)
+        private static void HandleXmlSitemap(IApplicationBuilder app)           // /sitemap.xml
         {
             app.Run(async context =>
             {
@@ -88,7 +85,7 @@ namespace Lab03
             });
         }
 
-        private static void HandleForm(IApplicationBuilder app)
+        private static void HandleForm(IApplicationBuilder app)                 // /form
         {
             app.Run(async context =>
             {
@@ -111,7 +108,7 @@ namespace Lab03
             });
         }
 
-        private static void HandleSample(IApplicationBuilder app)
+        private static void HandleSample(IApplicationBuilder app)               // /sample
         {
             app.Run(async context =>
             { 
