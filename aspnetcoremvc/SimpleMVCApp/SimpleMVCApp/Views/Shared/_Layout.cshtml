@@ -1,12 +1,17 @@
 ﻿<!DOCTYPE html>
 
+
+
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+
+    <script src="~/lib/jQuery/dist/jquery.js"></script>
 </head>
 <body>
     <div>menus</div>
+    <div>@RenderSection("mysection", required: false)</div>
     <div>
         @RenderBody()
     </div>

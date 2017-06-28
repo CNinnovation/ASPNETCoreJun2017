@@ -48,5 +48,25 @@ namespace SimpleMVCApp.Controllers
             IEnumerable<Book> books = _booksService.GetBooks();
             return View(books);
         }
+
+        public IActionResult MyPartialView()
+        {
+            return PartialView();
+        }
+
+        public IActionResult MyClientView()
+        {
+            return View();
+        }
+
+        public IActionResult ViewComponent1()
+        {
+            return ViewComponent("BooksList", new { publisher = "Wrox Press" });
+        }
+
+        public IActionResult ViewComponent2()
+        {
+            return View();
+        }
     }
 }
