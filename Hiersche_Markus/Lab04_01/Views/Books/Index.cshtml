@@ -1,0 +1,24 @@
+﻿@*using Lab04_01.Models;*@
+@model List<Lab04_01.Models.Books>
+    @{
+        Layout = "~/Views/_Shares/_Layout.cshtml";
+    }
+
+    <html>
+    <head>
+        <title>Books</title>
+    </head>
+    <body>
+        <h1>Bücherseite</h1>
+        @{
+            foreach (var item in Model)
+            {
+                <h2>@item.Titel</h2>
+                <p>
+                    @item.Autor<br />
+                    @item.Seiten
+                </p>
+            }
+        }
+    </body>
+</html>
