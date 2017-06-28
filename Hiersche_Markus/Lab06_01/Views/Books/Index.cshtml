@@ -1,0 +1,14 @@
+﻿@model List<Lab06_01.Models.Book>
+@{
+    Layout = "_Layout";
+}
+@{
+    foreach (var item in Model)
+    {
+        <p>
+            @item.Title<br />
+            @item.Id<br />
+            @item.Publisher<br />
+        </p>
+    }
+}

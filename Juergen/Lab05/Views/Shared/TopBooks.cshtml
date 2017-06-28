@@ -1,0 +1,11 @@
+﻿@using Lab05.Models
+
+@model List<Book>
+
+<div>
+    @foreach(var book in Model)
+    {
+        <div>@book.Title</div>
+        <br />
+    }
+</div>

@@ -1,0 +1,27 @@
+﻿@model System.String
+
+    @{
+ Layout = "_Layout";
+    }
+
+    <div>
+        <script src="~/lib/jQuery/dist/jquery.min.js"></script>
+
+        <script>
+            var page = 0;
+
+            $(function () {
+                $("#btn").click(function () {
+                    $("#list").append($("<div>").load("/Views/TopBooks/"+page));
+                    page = page + 1;
+                });
+
+            });
+        </script>
+
+        <div id="list"></div>
+
+        <button id="btn">mehr</button>
+    </div>
+
+
