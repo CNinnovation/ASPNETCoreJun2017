@@ -30,7 +30,7 @@ namespace Lab04_01
             //app.UseMvc(routes =>
             //{
             //    routes.MapRoute("default",
-            //        "{controller}/{action}/{id?}",
+            //        "{controller=Home}/{action=Index}/{id?}",
             //        new { controller = "Home", action = "Index" });
             //});
 
