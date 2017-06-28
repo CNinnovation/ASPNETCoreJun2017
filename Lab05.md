@@ -23,3 +23,12 @@
 3. Create a view where the `MyPArtialBookView`is used and pass the model to the partial view
 4. Create the action method `GetBooks` and return a partial view, use a model. Extend the repository to return a list of books.
 5. Use the partial view from a view using jQuery
+
+## View Components
+
+1. Create a view component `BooksViewComponent`
+2. Add the `ViewComponentAttribute`
+3. Implement dependency injection
+4. Implement the InvokeAsync method
+5. Define the user interface for the view-component
+6. Invoke the view-component from a view
