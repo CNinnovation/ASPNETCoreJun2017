@@ -1,0 +1,15 @@
+﻿
+
+<div>
+    HEADER
+
+    <div>
+        @if(String.IsNullOrEmpty((string)ViewBag.Navigation))
+        {
+            @Html.Partial("TopNav1")
+        } else
+        {
+            @Html.Partial((string)ViewBag.Navigation)
+        }
+    </div>
+</div>
