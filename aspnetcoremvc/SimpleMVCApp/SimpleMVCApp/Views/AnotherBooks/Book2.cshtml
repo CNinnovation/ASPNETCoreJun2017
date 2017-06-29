@@ -1,0 +1,40 @@
+﻿@model Book
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<hr />
+
+@*<form method="post" action="/AnotherBooks/Book2">
+    <span>Title:</span>
+    <input type="text" id="title" name="title" />
+    <br />
+    <span>Publisher:</span>
+    <input type="text" id="publisher" name="publisher" />
+    <br />
+    <input type="submit" value="Submit" />
+</form>*@
+
+
+@using (Html.BeginForm())
+{
+
+    @*@Html.LabelFor(m => m.Title)
+    @Html.TextBoxFor(m => m.Title)*@
+
+    // @Html.EditorFor(m => m)
+
+    @Html.EditorForModel()
+
+    <input type="color" />
+    <br />
+    <input type="date" />
+    <br />
+    <input type="email" />
+    <br />
+
+}
+
+<hr />

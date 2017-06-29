@@ -17,7 +17,23 @@ namespace SimpleMVCApp.Controllers
         [HttpPost]
         public IActionResult Book(Book book)
         {
+            if (!ModelState.IsValid)
+            {
+                // don't write it to DB
+            }
             return View();
         }
+
+        public IActionResult Book2()
+        {
+            return View(new Book { Title = "init", Publisher = "init" });
+        }
+
+        public IActionResult Book3()
+        {
+            return View(new Book { Title = "init", Publisher = "init" });
+        }
+
+        public string Sample() => "sample";
     }
 }
