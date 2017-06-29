@@ -25,7 +25,7 @@ namespace Lab07.TagHelper
 
             if (output.Attributes.ContainsName("style"))
             {
-                styleValue = string.Format("{0} {1}", output.Attributes["class"].Value, $"color: {color};");
+                styleValue = string.Format("{0} {1}", output.Attributes["style"].Value, $"color: {color};");
             }
             else
             {
