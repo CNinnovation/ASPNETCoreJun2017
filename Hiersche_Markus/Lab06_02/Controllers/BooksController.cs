@@ -1,4 +1,5 @@
 ﻿using Lab06_02.Models;
+using Lab06_02;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,11 +18,11 @@ namespace Lab06_02.Controllers
             this._context = context;
         }*/
 
-        ListOfBooks lob = new ListOfBooks();
 
         //GET /Books/Index
         public IActionResult Index()
         {
+            ListOfBooks lob = new ListOfBooks();
             /*
             _context.Books.Add(new Book("abc1", "Abc1"));
             _context.Books.Add(new Book("abc2", "Abc2"));
