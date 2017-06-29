@@ -20,7 +20,7 @@ namespace Lab06_02.Controllers
         //GET /Books/Index
         public IActionResult Index()
         {
-            //_context.Add(new boo)+
+            /*
             _context.Books.Add(new Book("abc1", "Abc1"));
             _context.Books.Add(new Book("abc2", "Abc2"));
             _context.Books.Add(new Book("abc3", "Abc3"));
@@ -28,8 +28,8 @@ namespace Lab06_02.Controllers
             var LoBooks = from b in _context.Books
                           select b;
 
-            //ViewBag.Books = LoBooks;
-            return View(LoBooks);
+            ViewBag.Books = LoBooks;*/
+            return View();
         }
 
 
