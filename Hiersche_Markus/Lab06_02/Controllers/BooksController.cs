@@ -28,13 +28,12 @@ namespace Lab06_02.Controllers
             var LoBooks = from b in _context.Books
                           select b;
 
-
             //ViewBag.Books = LoBooks;
-            return View();
+            return View(LoBooks);
         }
 
 
-        //// GET /Books/Index
+        // GET /Books/Index
         //public IActionResult Index()
         //{
         //    return View();
