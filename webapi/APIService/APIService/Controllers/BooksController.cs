@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace APIService.Controllers
 {
+    [Produces("application/json", "application/xml")]
     [Route("api/[controller]")]
     public class BooksController : Controller
     {

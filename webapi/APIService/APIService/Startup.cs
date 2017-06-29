@@ -29,7 +29,8 @@ namespace APIService
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddMvc();
+            services.AddMvc().AddXmlSerializerFormatters();
+          
             services.AddSingleton<IBooksService, BooksService>();
             services.AddSwaggerGen();
         }
