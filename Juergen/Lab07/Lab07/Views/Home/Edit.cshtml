@@ -1,0 +1,19 @@
+﻿@model Lab06.Models.Book
+
+
+
+    @using (var form = Html.BeginForm())
+    {
+        <div>
+            @Html.HiddenFor(m => m.BookID)
+            @Html.LabelFor(m => m.Author):
+            @Html.TextBoxFor(m => m.Author)
+            <br />
+            @Html.LabelFor(m => m.Title):
+            @Html.TextBoxFor(m => m.Title)
+            <br />
+            @Html.LabelFor(m => m.Publisher):
+            @Html.TextBoxFor(m => m.Publisher)
+        </div>
+        <input type="submit" class="myclassname" />
+    }
