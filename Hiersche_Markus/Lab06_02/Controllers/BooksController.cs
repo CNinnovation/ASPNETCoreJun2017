@@ -1,4 +1,5 @@
 ﻿using Lab06_02.Models;
+using Lab06_02;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,26 +11,27 @@ namespace Lab06_02.Controllers
 {
     public class BooksController : Controller
     {
-        private readonly BooksContext _context;
+        /*private readonly BooksContext _context;
 
         public BooksController(BooksContext context)
         {
             this._context = context;
-        }
+        }*/
+
 
         //GET /Books/Index
         public IActionResult Index()
         {
-            //_context.Add(new boo)+
+            ListOfBooks lob = new ListOfBooks();
+            /*
             _context.Books.Add(new Book("abc1", "Abc1"));
             _context.Books.Add(new Book("abc2", "Abc2"));
             _context.Books.Add(new Book("abc3", "Abc3"));
-            _context.Books.Add(new Book("abc4", "Abc4"));
-            var LoBooks = from b in _context.Books
-                          select b;
+            _context.Books.Add(new Book("abc4", "Abc4"));*/
 
-            //ViewBag.Books = LoBooks;
-            return View(LoBooks);
+            string tmp = "abc" + lob.Anz;
+            lob.ListOfBooksAddBook(new Book(tmp.ToLower(), tmp.ToUpper()));
+            return View(lob);
         }
 
 

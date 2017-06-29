@@ -1,0 +1,14 @@
+﻿@using Lab06.Models
+
+@model List<Book>
+
+    <ul rdmcolor>
+    @foreach (var book in Model)
+    {
+        <li>@book.Title</li>
+
+    }
+
+        @Html.Barcode(1)
+        @Html.Barcode(2)
+</ul>
